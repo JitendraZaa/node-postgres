@@ -1,0 +1,33 @@
+{
+  "name": "BasicCRUDOperation",
+  "version": "1.0.0",
+  "description": "Online IDE in 30 minutes",
+  "main": "server.js",
+  "dependencies": {
+    "http": "~0.0.0",
+    "request": "~2.36.0",
+    "express": "~4.4.5",
+    "logfmt": "~1.1.2",
+    "body-parser": "~1.6.2",
+    "serve-favicon": "*",
+    "cookie-parser": "~1.0.1",
+    "jade": "*"
+      
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "keywords": [
+    "Salesforce",
+    "Tooling",
+    "API"
+  ],
+  "author": "Jitendra Zaa",
+  "license": "MIT"
+}
