@@ -1,7 +1,7 @@
 {
   "name": "PostgreSQL in Nodejs",
   "description": "CRUD operations using PostgreSQL as a database, Heroku as platform, Node.js as language and Angularjs as javascript based MVC",
-  "repository": "git@github.com:JitendraZaa/node-postgres.git",
-  "logo": "node-postgres.herokuapp.com/Node.ico",
+  "repository": "https://github.com/JitendraZaa/node-postgres.git",
+  "logo": "https://node-postgres.herokuapp.com/Node.ico",
   "keywords": [ "Salesforce", "AngularJs", "Node.js", "PostgreSQL", "Jitendra"]
 }
