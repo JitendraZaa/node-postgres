@@ -1,7 +1,7 @@
 {
   "name": "BasicCRUDOperation",
   "version": "1.0.0",
-  "description": "Online IDE in 30 minutes",
+  "description": "CRUD Operations in Node.js using PostgreSQL",
   "main": "server.js",
   "dependencies": {
     "http": "~0.0.0",
@@ -18,7 +18,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node App.js"
-  },
+  }, 
   "repository": {
     "type": "git",
     "url": "https://github.com/"
