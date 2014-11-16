@@ -80,10 +80,13 @@
         <script>
  
             var myApp = angular.module('postgreSQL',[ ]); 
- 
-
+             
             myApp.controller('postgreSQLCtrl', ['$scope' ,'$http',  function($scope,$http) {
                 $scope.val1 = 'This is temp Val' ;  
+                $scope.fName = '';
+                $scope.lName = '';
+                $scope.email = '';  
+                $scope.mbl = '' ;
                 
                 $scope.getAllRec = function(){ 
                      $http({method: 'GET', url: '/db/readRecords'}).
@@ -114,8 +117,7 @@
                                     $scope.getAllRec();
                             });
                     }
-                }
-                
+                } 
                 
                 $scope.getAllRec();
                 

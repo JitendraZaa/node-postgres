@@ -57,6 +57,50 @@ module.exports = {
             res.end();  
         });
 
+    },
+    
+    createTable : function(req, res){
+        var pg = require('pg');   
+        
+        var conString = "postgres://postgres:Welcome123@localhost:5432/postgres";
+        var client = new pg.Client(conString);
+
+        client.connect();
+         
+        var query = client.query( "CREATE TABLE employee"+
+                                    "("+
+                                      "firstname character varying(50),"+
+                                      "lastname character varying(20),"+
+                                      "email character varying(30),"+
+                                      "mobile character varying(12),"+
+                                      "id serial NOT NULL"+
+                                    ")");
+    
+        query.on("end", function (result) {          
+            client.end(); 
+            res.write('Table Schema Created');
+            res.end();  
+        });
+
+    },
+    
+    dropTable : function(req, res){
+        var pg = require('pg');   
+        
+        var conString = "postgres://postgres:Welcome123@localhost:5432/postgres";
+        var client = new pg.Client(conString);
+
+        client.connect();
+         
+        var query = client.query( "Drop TABLE employee");
+    
+        query.on("end", function (result) {          
+            client.end(); 
+            res.write('Table Schema Deleted');
+            res.end();  
+        });
+
     }
+
     
 };
