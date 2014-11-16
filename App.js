@@ -5,6 +5,7 @@ var express = require('express'),
     app = express();
 
 var dbOperations = require("./dbOperations.js");
+var logFmt = require("logfmt");
 
 app.set('views', __dirname + '/views') ;
  
