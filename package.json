@@ -11,7 +11,10 @@
     "body-parser": "~1.6.2",
     "serve-favicon": "*",
     "cookie-parser": "~1.0.1",
-    "jade": "*"
+    "jade": "*",
+    "jaydata" : "*",
+    "xmldom" : "*",
+    "q" : "*"
       
   },
   "devDependencies": {},

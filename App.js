@@ -4,6 +4,7 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     app = express();
 
+ 
 var dbOperations = require("./dbOperations.js");
 var logFmt = require("logfmt");
 
@@ -37,7 +38,7 @@ app.get('/db/dropTable', function(req,res){
 app.set('port', process.env.PORT || 3001);
 
 app.use(express.static(__dirname + '/client')); 
- 
+app.use(express.errorHandler());
 app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
